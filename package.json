@@ -9,7 +9,8 @@
   "scripts": {
     "push": "git push -u origin development",
     "test": "mocha",
-    "deploy": "node deploy.js"
+    "deploy": "node deploy.js",
+    "compile": "node compile.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
