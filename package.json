@@ -1,0 +1,9 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "A manager will execute the contract then the contract will randomly give the money to one of the registered players",
+  "main": "index.js",
+  "repository": "git@github.com:Rafaell416/lottery.git",
+  "author": "Rafel Villarreal <rvillarreal416@gmail.com>",
+  "license": "MIT"
+}
