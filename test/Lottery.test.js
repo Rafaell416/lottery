@@ -91,10 +91,10 @@ describe('Lottery', () => {
       value: web3.utils.toWei('2', 'ether')
     })
 
-    const initialBalance = await web3.eth.getBalance(accounts[0])
+    const initialBalance = await web3.eth.getBalance(accounts[0]) //  97913831380000000000
     await lottery.methods.pickWinner().send({ from: accounts[0] })
-    const finalBalance = await web3.eth.getBalance(accounts[0])
-    const difference = finalBalance - initialBalance
+    const finalBalance = await web3.eth.getBalance(accounts[0]) // 99913411940000000000
+    const difference = finalBalance - initialBalance  // 1999580560000008200
 
     assert(difference > web3.utils.toWei('1.8', 'ether'))
   })
